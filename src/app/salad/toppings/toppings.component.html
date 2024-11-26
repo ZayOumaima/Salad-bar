@@ -1,0 +1,6 @@
+<mat-selection-list [multiple]="false" 
+(selectionChange)="chooseTopping($event)">
+      <mat-list-option *ngFor="let t of toppings" [value]="t"> 
+        {{t.name}} ({{t.price| currency:'€' }}) 
+      </mat-list-option>
+  </mat-selection-list>
